@@ -1,0 +1,13 @@
+G0 X10Y10Z10
+
+G92
+
+@set x 10
+@mark a
+
+G1 X<x>
+G1 Y10
+G1 X1
+G1 Y-10
+@add x -1
+@jinz x a
